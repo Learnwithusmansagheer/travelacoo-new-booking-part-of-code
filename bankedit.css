@@ -381,6 +381,7 @@ body {
 
 
 
+
 .navbar {
     width: 85%;
 
@@ -574,7 +575,10 @@ body {
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(183, 183, 183, 1);
     cursor: pointer;
-
+    transition: all .5s ease;
+}
+.subInput select:hover{
+background-color: #6c6969a4;
 }
 
 .subInput input {
@@ -589,8 +593,11 @@ body {
     background: rgba(255, 255, 255, 1);
     border: 1px solid rgba(183, 183, 183, 1);
     cursor: pointer;
+    transition: all .5s ease;
 }
-
+.subInput input:hover{
+    background-color: #6c6969a4;
+}
 .input2 label {
     position: absolute;
     margin: 10px;
@@ -624,8 +631,7 @@ body {
     opacity: 0px;
     color: rgba(191, 191, 191, 1);
     background: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(183, 183, 183, 1);
-    cursor: pointer;
+    border: 1px solid rgba(183, 183, 183, 1)
 }
 
 .button-footer {
@@ -649,13 +655,16 @@ body {
     line-height: 20px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
-    transition: all .5s ease-in-out;
 
+    transition: all .5s ease;
 }
-
-.button-footer button:hover {
-    background-color: #18c552;
+#update{
+    position: absolute;
+    margin-left: 135px;
+}
+.button-footer button:hover{
     transform: scale(1.1);
+    background-color: #666;
 }
 
 @media screen and (max-width:1024px) {
@@ -720,7 +729,13 @@ body {
     }
 
     .add-header h1 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .button-footer{
+        padding: 0 0 0 10px;
+    }
+    .button-footer button{
+        width: 90px;
     }
 
 }

@@ -380,6 +380,7 @@ body {
 
 
 
+
 .navbar {
     width: 85%;
 
@@ -530,7 +531,7 @@ input[type=text] {
     background-position: 18px 10px;
     background-repeat: no-repeat;
     padding: 10px 12px 10px 40px;
-    background-color: rgb(238, 232, 232);
+    
 }
 
 

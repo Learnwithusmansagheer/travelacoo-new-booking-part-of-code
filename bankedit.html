@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="add-bank.css">
-    <title>Add Banks</title>
+    <link rel="stylesheet" href="./bankedit.css">
+    <title>Edit Bank</title>
 </head>
 
 <body>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="dashboard">
                         <img src="images/banks.png" alt="">
-                        <a href="./bank-filter.html">Banks</a>
+                        <a href="./bankedit.html">Banks</a>
                     </div>
                     <div class="dashboard">
                         <img src="images/vendor.png" alt="">
@@ -67,7 +67,7 @@
                             <img src="images/setting.png" alt="">
                             <a href="#">Settings</a>
                         </div>
-                        <select style="border: none;width: 20px;" name="" id="select">
+                        <select style="border: none;" name="" id="">
                             <option value="1">222</option>
                             <option value="1">222</option>
                             <option value="1">222</option>
@@ -94,46 +94,47 @@
 
     <section>
         <div class="navbar">
-            <h1>Banks > Add</h1>
+            <h1>Bank > Edit</h1>
             <img src="images/billicon.png" alt="">
         </div>
         <div class="packageSetting">
             <div class="add_airlines">
                 <div class="add-header">
-                    <h1>Add New Banks Here</h1>
+                    <h1>Edit Your Bank Here</h1>
                 </div>
-                <div class="input-setting">
-                    <div class="input1">
-                        <div class="subInput">
-                            <label for="text">Bank Name <span>*</span></label><br>
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div class="subInput">
-                            <label for="text">Branch Name<span>*</span></label><br>
-                            <input type="text" placeholder="Branch Name">
-                        </div>
+                <div class="input1">
+                    <div class="subInput">
+                        <label for="text">Bank Name <span>*</span></label><br>
+                        <input type="text" placeholder="Name">
                     </div>
-                    <div class="input1">
-                        <div class="subInput">
-                            <label for="text">Account Name <span>*</span></label><br>
-                            <input type="text" placeholder="Account Name">
-                        </div>
-                        <div class="subInput">
-                            <label for="text">Account NO.<span>*</span></label><br>
-                            <input type="text" placeholder="Address">
-                        </div>
+                    <div class="subInput">
+                        <label for="text">Branch Name<span>*</span></label><br>
+                        <input type="text" placeholder="Branch Name">
                     </div>
-                    
-                    
-                    
-                    <div class="input2">
-                        <label for="text">Balance<span>*</span></label><br>
-                            <input type="text" placeholder="Rs 75000">
+                </div>
+                <div class="input1">
+                    <div class="subInput">
+                        <label for="text">Account Name <span>*</span></label><br>
+                        <input type="text" placeholder="Account Name">
                     </div>
-                    <div class="button-footer">
-                        <button><a href="./bankedit.html">
-                            ADD
-                        </a></button>
+                    <div class="subInput">
+                        <label for="text">Account NO.<span>*</span></label><br>
+                        <input type="text" placeholder="Address">
+                    </div>
+                </div>
+                
+                
+                
+                <div class="input2">
+                    <label for="text">Balance<span>*</span></label><br>
+                        <input type="text" placeholder="Rs 75000">
+                </div>
+                    <div style="display: flex;gap: 100px;" class="button-footer">
+                        <button style="display: flex;align-items: center;justify-content: center;font-size: 25px;"><i
+                                class='bx bx-left-arrow-alt'></i><span><a href="./bank-filter.html"> BACK </a></span></button>
+                        <button style="font-size: 25px;"  id="update"><a href="./bank.html">UPDATE</a></button>
+
+
                     </div>
                 </div>
             </div>
